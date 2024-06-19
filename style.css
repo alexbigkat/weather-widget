@@ -7,7 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light background for the page */
+    background: url('path/to/your-background-image.png') no-repeat center center fixed;
+    background-size: cover; /* Ensure background image covers the entire viewport */
     margin: 0;
 }
 
@@ -20,7 +21,7 @@ body {
 }
 
 .weather-widget {
-    background: white;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for widget */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -32,7 +33,7 @@ body {
 .weather-widget h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: white;
+    color: #333; /* Dark text color */
     background-color: #6c757d; /* Grey background for location */
     padding: 10px;
     border-radius: 5px;
@@ -47,7 +48,8 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 5px;
-    color: white; /* Text and icon color */
+    color: #333; /* Dark text color */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background for sections */
 }
 
 .weather-widget #weather-description {
