@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiKey = 'e11152814f203b00432e530cfddebd54'; // Your API key
+    const apiKey = 'e11152814f203b00432e530cfddebd54'; // Replace with your API key
     const city = 'Oklahoma City';
     const state = 'Oklahoma';
 
