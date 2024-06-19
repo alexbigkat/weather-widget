@@ -7,7 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light background for the page */
+    background: url('path/to/your-background-image.png') no-repeat center center fixed;
+    background-size: cover; /* Ensure background image covers the entire viewport */
     margin: 0;
 }
 
