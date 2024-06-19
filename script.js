@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const apiKey = '0d1e13ec03b2dcf8d76536ab6725107a'; // Replace with your API key
-    const city = 'Bethany';
+    const city = 'Oklahoma City';
     const state = 'Oklahoma';
 
     async function getWeather() {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             const data = await response.json();
             document.getElementById('weather-description').textContent = `Weather: ${data.weather[0].description}`;
-            document.getElementById('weather-temperature').textContent = `Temperature: ${data.main.temp}°F`;
+            document.getElementById('weather-temperature').textContent = `${data.main.temp}°F`;
             document.getElementById('weather-humidity').textContent = `Humidity: ${data.main.humidity}%`;
             document.getElementById('weather-wind').textContent = `Wind Speed: ${data.wind.speed} mph`;
         } catch (error) {
