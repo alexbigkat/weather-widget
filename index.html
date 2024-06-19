@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Widget</title>
+    <title>Weather Banner</title>
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="weather-widget">
-        <h2>Bethany, OK</h2>
-        <div id="weather-temperature"></div>
-        <div id="weather-description">Loading weather...</div>
-        <div id="weather-humidity"></div>
-        <div id="weather-wind"></div>
+    <div class="weather-banner">
+        <div class="weather-item location" id="location">
+            <i class="fas fa-map-marker-alt"></i> <!-- Location icon -->
+            <h2>Bethany, Oklahoma</h2>
+        </div>
+        <div class="weather-item temperature" id="weather-temperature">
+            <i class="fas fa-thermometer-half"></i> <!-- Temperature icon -->
+            <span>Loading...</span>
+        </div>
+        <div class="weather-item weather" id="weather-description">
+            <i class="fas fa-cloud"></i> <!-- Weather icon -->
+            <span>Loading...</span>
+        </div>
+        <div class="weather-item humidity" id="weather-humidity">
+            <i class="fas fa-tint"></i> <!-- Humidity icon -->
+            <span>Loading...</span>
+        </div>
+        <div class="weather-item wind" id="weather-wind">
+            <i class="fas fa-wind"></i> <!-- Wind icon -->
+            <span>Loading...</span>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
