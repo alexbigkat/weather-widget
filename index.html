@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Banner</title>
-    <!-- Link to Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Weather Widget</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="weather-banner">
-        <div class="weather-item location" id="location">
-            <i class="fas fa-map-marker-alt"></i> <!-- Location icon -->
-            <h2>Bethany, Oklahoma</h2>
+    <div class="weather-widget">
+        <h2 id="weather-location" class="section">
+            <i class="fa-solid fa-location-dot"></i> Bethany, OK
+        </h2>
+        <div id="weather-temperature" class="section">
+            <i class="fa-solid fa-temperature-high"></i> <span id="temperature-text"></span>
         </div>
-        <div class="weather-item temperature" id="weather-temperature">
-            <i class="fas fa-thermometer-half"></i> <!-- Temperature icon -->
-            <span>Loading...</span>
+        <div id="weather-description" class="section">
+            <i class="fa-solid fa-cloud"></i> <span id="description-text">Loading...</span>
         </div>
-        <div class="weather-item weather" id="weather-description">
-            <i class="fas fa-cloud"></i> <!-- Weather icon -->
-            <span>Loading...</span>
+        <div id="weather-humidity" class="section">
+            <i class="fa-solid fa-droplet"></i> <span id="humidity-text"></span>
         </div>
-        <div class="weather-item humidity" id="weather-humidity">
-            <i class="fas fa-tint"></i> <!-- Humidity icon -->
-            <span>Loading...</span>
-        </div>
-        <div class="weather-item wind" id="weather-wind">
-            <i class="fas fa-wind"></i> <!-- Wind icon -->
-            <span>Loading...</span>
+        <div id="weather-wind" class="section">
+            <i class="fa-solid fa-wind"></i> <span id="wind-text"></span>
         </div>
     </div>
     <script src="script.js"></script>
