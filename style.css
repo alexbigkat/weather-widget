@@ -1,41 +1,82 @@
-.weather-widget {
-    background: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    max-width: 300px;
-    margin: auto;
+    background-color: #f0f0f0; /* Example background color */
 }
 
-.weather-widget h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #82c341; /* Color for the heading */
-}
-
-.weather-widget #weather-description {
+.weather-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    color: white; /* Default text color */
     font-size: 18px;
-    margin: 10px 0;
-    color: #f7921e; /* Color for weather description */
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.weather-widget #weather-temperature {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #dc3972; /* Color for temperature */
+/* Common style for weather items */
+.weather-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+/* Different background colors for each weather item */
+.weather-item.location {
+    background-color: #88817f; /* Background color for location */
+}
+
+.weather-item.weather {
+    background-color: #dc3972; /* Background color for weather description */
+}
+
+.weather-item.temperature {
+    background-color: #00b6c9; /* Background color for temperature */
     font-weight: bold; /* Make temperature text bold */
 }
 
-.weather-widget #weather-humidity {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #00b6c9; /* Color for humidity */
+.weather-item.humidity {
+    background-color: #82c341; /* Background color for humidity */
+    color: rgb(255, 255, 255); /* Text color for better contrast */
 }
 
-.weather-widget #weather-wind {
+.weather-item.wind {
+    background-color: #f7921e; /* Background color for wind speed */
+}
+
+.weather-item i {
+    font-size: 24px; /* Font size for icons */
+}
+
+/* Style the text inside weather items */
+.weather-item span, .weather-item h2 {
+    display: inline;
     font-size: 18px;
-    margin: 10px 0;
-    color: #ffd600; /* Color for wind speed */
+}
+
+@media (max-width: 600px) {
+    .weather-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .weather-item {
+        margin: 10px 0;
+    }
 }
