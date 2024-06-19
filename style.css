@@ -1,6 +1,6 @@
 .weather-widget {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -12,9 +12,30 @@
 .weather-widget h2 {
     font-size: 24px;
     margin-bottom: 15px;
+    color: #82c341; /* Color for the heading */
 }
 
-.weather-widget div {
+.weather-widget #weather-description {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 10px 0;
+    color: #f7921e; /* Color for weather description */
+}
+
+.weather-widget #weather-temperature {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #dc3972; /* Color for temperature */
+    font-weight: bold; /* Make temperature text bold */
+}
+
+.weather-widget #weather-humidity {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #00b6c9; /* Color for humidity */
+}
+
+.weather-widget #weather-wind {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffd600; /* Color for wind speed */
 }
