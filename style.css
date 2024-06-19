@@ -8,10 +8,15 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0; /* Light background for the page */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    height: 100vh;
     margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding around the weather widget */
 }
 
 .weather-widget {
@@ -22,18 +27,15 @@ body {
     font-family: Arial, sans-serif;
     width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Space from the top of the screen */
-    position: relative; /* Make it stick to the top without affecting body height */
 }
 
 .weather-widget h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    background-color: #6c757d; /* Grey background for location */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .weather-widget .section {
@@ -48,25 +50,21 @@ body {
     color: white; /* Text and icon color */
 }
 
-.weather-widget #weather-location {
-    background-color: #88817f; /* Grey background for location */
-}
-
 .weather-widget #weather-description {
-    background-color: #f7921e; /* Blue background for weather description */
+    background-color: #007bff; /* Blue background for weather description */
 }
 
 .weather-widget #weather-temperature {
-    background-color: #dc3972; /* Green background for temperature */
+    background-color: #28a745; /* Green background for temperature */
     font-weight: bold;
 }
 
 .weather-widget #weather-humidity {
-    background-color: #82c341; /* Red background for humidity */
+    background-color: #dc3545; /* Red background for humidity */
 }
 
 .weather-widget #weather-wind {
-    background-color: #00b6c9; /* Yellow background for wind speed */
+    background-color: #ffc107; /* Yellow background for wind speed */
 }
 
 .weather-widget i {
